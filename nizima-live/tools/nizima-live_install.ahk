@@ -48,18 +48,15 @@ If WinExist(winTitle)
    Send "{Space}" ; Accepts License Agreement
    sleep 500
    Send "{Enter}" ; Continues
+   sleep 1000
 }
-Send "{Enter}"
-sleep 500
-Send "{Tab}"
-sleep 500
-Send "{Space}"
-sleep 500
-Send "{Enter}"
-sleep 500
-Send "{Enter}"
-sleep 500
-Send "{Enter}"
-sleep 6000
-Send "{Space}"
-Send "{Enter}"
+
+; Shortcut Menu
+Winwait, %winTitle%,, 15
+If WinExist(winTitle)
+{
+   ;
+   WinActivate
+   Send "{Enter}" ; Starts Install
+   Sleep 1000
+}
