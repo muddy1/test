@@ -51,7 +51,7 @@ If WinExist(winTitle)
    sleep 1000
 }
 
-; Shortcut Menu
+; Ready to Install
 Winwait, %winTitle%,, 15
 If WinExist(winTitle)
 {
