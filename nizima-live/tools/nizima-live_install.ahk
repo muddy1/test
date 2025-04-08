@@ -73,7 +73,7 @@ If WinExist(winTitle)
 winTitle := "ahk_class #32770 ahk_exe rundll32.exe" ; If Nizima cam is not installed windows security will ask to trust Live2D INC and install
 
 ; Trusts Live2D INC. and installs cam
-Winwait, %winTitle%,, 120
+Winwait, %winTitle%,, 10
 If WinExist(winTitle)
 {
    WinActivate
